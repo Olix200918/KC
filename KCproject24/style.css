@@ -1,37 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 /* ترتيب البودي */
-body{display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+body {
+  transition: 1s;
+  background-image: url(https://64.media.tumblr.com/bfdd04d8e2ecf62099a964503db37c92/tumblr_my8ls4Wnxu1relaado1_500.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
 }
-/* خلفية الموقع */
-body{
-    background-image: url(https://64.media.tumblr.com/bfdd04d8e2ecf62099a964503db37c92/tumblr_my8ls4Wnxu1relaado1_500.gif);
- background-size: cover;
- background-repeat: no-repeat;
+/*  ناف بار الترحيب */
+.navbar {
+  font-family: "Marhey", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background: rgb(0, 138, 0);
+  font-size: 32px;
 }
-/* ناف بار */
-.navbar{
-    font-family: "Lalezar", system-ui;
-    position: absolute;
-     top: 0;
-     left: 0;
-     text-align: center;
-     width: 100%;
-     height: 50px;
-     background: rgba(250, 250, 250, 0.447);
-     box-shadow: -1px 4px 28px 0px rgb(0,0,0,0.75);
-     z-index: 0;
-     font-size: 35px;
+/* شريط التنقلات */
+.navbar-two {
+  font-family: "Nerko One", cursive;
+  font-size: 30px;
+  color: rgb(0, 138, 0);
+  margin-top: 42px;
+  text-align: left;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  height: 30px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0.16);
+  box-shadow: -1px 4px 28px 0px rgb(0, 0, 0, 0.75);
+  z-index: 0;
 }
-/* بوكس التسجيل */
-.coder-sing{
-    margin-top: 70px;
-    text-align: center; 
-    width: 400px;
-    height: 500px;
-    border-radius: 10px;
-    background: rgba(250, 250, 250, 0.434);
-    box-shadow: -1px 4px 28px 0px rgb(0,0,0,0.75);
-    z-index: 0;
+.navbar-two button {
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 138, 0);
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
+
+.navbar-two button:hover {
+  background-color: #ddd; /* لون الخلفية عند التمرير فوق الزر */
+}
+/* المبرمج */
+.new {
+  background-color: white;
+  border: rgb(0, 138, 0) solid 10px;
+  border-radius: 10px;
+  height: 250px;
+  width: 200px;
+  text-align: center;
+  padding-top: 8px;
+  margin: 3px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 10px 10px 10px 10px;
+}
+h1 {
+  color: rgb(0, 138, 0);
+  font-family: "Marhey", sans-serif;
+  font-size: x-large;
+}
+
+h2 {
+  font-family: "Handjet", sans-serif;
+  margin-top: 10px;
+}
+p {
+  font-family: monospace;
+  font-size: large;
+}
+/* اضافه مبرمج */
+#addBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  font-size: 59px;
+  background-color: rgb(0, 138, 0);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  padding: 10px 20px;
+}
+
+#addBtn:hover {
+  background-color: rgb(0, 106, 0);
+}
+/* مربع اضافه مبرمج */
+#formContainer {
+  transition: 1s;
+  border: rgb(0, 138, 0) solid 10px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  height: 200px;
+  width: 150px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  padding: 10px 20px;
+}
+input {
+  margin-top: 1px;
+  margin-left: 15px;
+  width: 120px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+input[type="number"] {
+  margin-bottom: 3px;
+}
+
+input:focus {
+  outline: none;
+  border-color: rgb(0, 138, 0);
+  box-shadow: 0 0 5px rgb(0, 138, 0);
+}
+/* زر ارسال مبرمج */
+#submit {
+  display: flex;
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+#submit:hover {
+  transition: 1s;
+  background-color: rgb(0, 138, 0);
+}
+#result {
+  margin: 0;
+}
+
