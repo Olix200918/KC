@@ -31,15 +31,20 @@
         alt=""
       />
       coder<span style="color: rgb(0, 138, 0)">hub</span>
-      <button id="allDivs" onclick="selectTap(3)">الصفحه الرئيسيه</button>
-      <button id="wepDevalpor" onclick="selectTap(0)">مبرمج مواقع</button>
-      <button id="programDevalpor" onclick="selectTap(1)">مبرمج تطبيقات</button>
-      <button id="gameDevalpr" onclick="selectTap(2)">مبرمج العاب</button>
+ 
+      <button id="allDivs" onclick="selectTap(3)">الصفحه الرئيسيه</button></li>
+          <button id="wepDevalpor" onclick="selectTap(0)">مبرمج مواقع</button></li>
+           <button id="programDevalpor" onclick="selectTap(1)">مبرمج تطبيقات</button></li>
+              <button id="gameDevalpr" onclick="selectTap(2)">مبرمج العاب</button></li>
+    
     </nav>
     <!-- زر اضافه المبرمج -->
     <button id="addBtn">+</button>
     <!-- ديف تسجيل المعلومات -->
     <div id="formContainer" style="display: none">
+      <!-- زر الأخفاء -->
+      <button class="hide-element" id="hide">x</button>
+      <!-- بدايه الinputs -->
       <input type="text" id="name" placeholder="الاسم" />
       <datalist id="coders">
         <option value="مبرمج العاب"></option>
@@ -56,7 +61,10 @@
 
       <input type="text" id="prgrf" placeholder="معلومات اضافيه" />
       <input type="number" id="number" placeholder="رقم الواتساب" />
-      <button id="submit" onclick="submitData()">إضافة</button>
+      <!-- نهايه الinputs -->
+
+      <!-- زر الأرسال -->
+      <button id="submit" onclick="submitData()">تم</button>
     </div>
     <!-- ديف تجربه -->
     <div class="container" id="divsContainer"></div>
@@ -66,3 +74,4 @@
     <script src="./script.js"></script>
   </body>
 </html>
+
